@@ -5,8 +5,8 @@ const form = document.querySelector('.form');
 const delayInput = document.querySelector('[name="delay"]');
 const stateInputs = document.querySelectorAll('[name="state"]');
 
-form.addEventListener('submit', event => {
-  event.preventDefault();
+form.addEventListener('submit', e => {
+  e.preventDefault();
 
   const delay = Number(delayInput.value);
   const stateChoice = Array.from(stateInputs).find(
